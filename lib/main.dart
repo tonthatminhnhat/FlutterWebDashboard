@@ -4,6 +4,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 import 'layout.dart';
 void main(){
+  Get.put(MenuController());
   runApp(MyApp());
 }
 class MyApp extends StatelessWidget{

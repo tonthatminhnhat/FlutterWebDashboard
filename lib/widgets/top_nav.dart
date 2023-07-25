@@ -13,10 +13,12 @@ AppBar topNavigationBar(BuildContext context, GlobalKey<ScaffoldState> key)=>
                         child: Image.asset('assets/logo.png',width: 28,),
                       )
                     ],
-                  ):IconButton(onPressed: (){
+                  ) :IconButton(onPressed: (){
                     key.currentState?.openDrawer();
               }, icon: Icon(Icons.menu)),
+
             elevation: 0,
+
             title: Row(
               children: [
                 Visibility(child:CustomText(text:'Dash',
