@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
-
 import '../constants/controllers.dart';
 import '../constants/style.dart';
 import 'custom_text.dart';
@@ -9,7 +8,7 @@ import 'custom_text.dart';
 class HorizontalmenuItem extends StatelessWidget {
   final String itemName;
   final Function onTap;
-  const HorizontalmenuItem(this.itemName, this.onTap, {Key ?key});
+  const HorizontalmenuItem({Key? key, required this.itemName, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
